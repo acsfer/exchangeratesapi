@@ -6,16 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="Exchange rates API is a free service for current and historical foreign exchange rates published by the European Central Bank">
 
-    <!-- Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-27665790-13"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-
-      gtag('config', 'UA-27665790-13');
-    </script>
-
     <!-- Favicon -->
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
     <link rel="icon" href="/favicon.ico" type="image/x-icon">
@@ -38,11 +28,6 @@
             <img src="/static/logo.svg" alt="Exchange rates API" />
           </a>
           <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-              <a href="https://stats.uptimerobot.com/Q6z9gTYrY" class="nav-link">
-                Status
-              </a>
-            </li>
             <li class="nav-item">
               <a href="https://github.com/madisvain/exchangeratesapi" class="nav-link">
                 Source
@@ -72,7 +57,7 @@
         <div id="shell" class="col-6 offset-3">
           <pre>
             <code class="http px-5">
-GET https://exchangeratesapi.io/api/latest HTTP/1.1
+GET https://ekiexchangerate.herokuapp.com//api/latest HTTP/1.1
 
 {
   "base": "EUR",
@@ -141,7 +126,7 @@ GET https://exchangeratesapi.io/api/latest HTTP/1.1
           </p>
           <pre>
             <code class="http px-5 rounded-corners">
-GET https://exchangeratesapi.io/api/latest HTTP/1.1
+GET https://ekiexchangerate.herokuapp.com//api/latest HTTP/1.1
             </code>
           </pre>
 
@@ -150,7 +135,7 @@ GET https://exchangeratesapi.io/api/latest HTTP/1.1
           </p>
           <pre>
             <code class="http px-5 rounded-corners">
-GET https://exchangeratesapi.io/api/2010-01-12 HTTP/1.1
+GET https://ekiexchangerate.herokuapp.com//api/2010-01-12 HTTP/1.1
             </code>
           </pre>
 
@@ -160,7 +145,7 @@ GET https://exchangeratesapi.io/api/2010-01-12 HTTP/1.1
           </p>
           <pre>
             <code class="http px-5 rounded-corners">
-GET https://exchangeratesapi.io/api/latest?base=USD HTTP/1.1
+GET https://ekiexchangerate.herokuapp.com//api/latest?base=USD HTTP/1.1
             </code>
           </pre>
 
@@ -169,7 +154,7 @@ GET https://exchangeratesapi.io/api/latest?base=USD HTTP/1.1
           </p>
           <pre>
             <code class="http px-5 rounded-corners">
-GET https://exchangeratesapi.io/api/latest?symbols=USD,GBP HTTP/1.1
+GET https://ekiexchangerate.herokuapp.com//api/latest?symbols=USD,GBP HTTP/1.1
             </code>
           </pre>
 
