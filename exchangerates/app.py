@@ -1,6 +1,7 @@
 import fcntl
 import itertools
 import requests
+import ssl
 
 from datetime import datetime
 from decimal import Decimal
