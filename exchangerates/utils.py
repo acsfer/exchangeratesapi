@@ -47,6 +47,7 @@ def cors(origin=None):
 
 def parse_database_url(url):
     url = urlparse.urlparse(url)
+    ssl = True
 
     # Split query strings from path.
     path = url.path[1:]
@@ -71,7 +72,6 @@ def parse_database_url(url):
         'DB_USER': urlparse.unquote(url.username) if url.username else None,
         'DB_PASSWORD': urlparse.unquote(url.password) if url.password else None,
         'DB_HOST': hostname,
-        'DB_PORT': url.port,
-        ssl = True
+        'DB_PORT': url.port
     }
     return {k: v for k, v in config.items() if v is not None}
