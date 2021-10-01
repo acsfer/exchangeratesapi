@@ -1,5 +1,4 @@
 import ujson
-import ssl
 import urllib.parse as urlparse
 
 from functools import wraps
@@ -73,6 +72,6 @@ def parse_database_url(url):
         'DB_PASSWORD': urlparse.unquote(url.password) if url.password else None,
         'DB_HOST': hostname,
         'DB_PORT': url.port,
-        'DB_SSL': True
+        'DB_SSL': ssl_ctx
     }
     return {k: v for k, v in config.items() if v is not None}
