@@ -47,7 +47,6 @@ def cors(origin=None):
 
 def parse_database_url(url):
     url = urlparse.urlparse(url)
-    ssl = True
 
     # Split query strings from path.
     path = url.path[1:]
