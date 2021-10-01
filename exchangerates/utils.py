@@ -75,7 +75,6 @@ def parse_database_url(url):
         'DB_USER': urlparse.unquote(url.username) if url.username else None,
         'DB_PASSWORD': urlparse.unquote(url.password) if url.password else None,
         'DB_HOST': hostname,
-        'DB_PORT': url.port,
-        'DB_SSL': True
+        'DB_PORT': url.port
     }
     return {k: v for k, v in config.items() if v is not None}
