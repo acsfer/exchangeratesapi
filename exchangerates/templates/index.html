@@ -42,7 +42,7 @@
             <small>with currency conversion</small>
           </h1>
           <p class="text-center">
-            Exchange rates API is a free service for current and historical foreign exchange rates
+            Exchange rates API for current and historical foreign exchange rates
             <br/> published by the
             <a href="https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/index.en.html">
               European Central Bank
@@ -83,7 +83,7 @@ GET /api/latest HTTP/1.1
           </p>
           <pre>
             <code class="http px-5 rounded-corners">
-GET /api/latest HTTP/1.1
+              GET /api/latest HTTP/1.1
             </code>
           </pre>
 
@@ -92,7 +92,7 @@ GET /api/latest HTTP/1.1
           </p>
           <pre>
             <code class="http px-5 rounded-corners">
-GET /api/2010-01-12 HTTP/1.1
+              GET /api/2010-01-12 HTTP/1.1
             </code>
           </pre>
 
@@ -102,7 +102,7 @@ GET /api/2010-01-12 HTTP/1.1
           </p>
           <pre>
             <code class="http px-5 rounded-corners">
-GET /api/latest?base=USD HTTP/1.1
+              GET /api/latest?base=USD HTTP/1.1
             </code>
           </pre>
 
@@ -111,13 +111,9 @@ GET /api/latest?base=USD HTTP/1.1
           </p>
           <pre>
             <code class="http px-5 rounded-corners">
-GET /api/latest?symbols=USD,GBP HTTP/1.1
+              GET /api/latest?symbols=USD,GBP HTTP/1.1
             </code>
           </pre>
-
-          <p>
-            Please cache results whenever possible this will allow us to keep the service without any rate limits or api key requirements.
-          </p>
         </div>
       </div>
     </div>
