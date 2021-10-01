@@ -1,16 +1,11 @@
 import ujson
 import urllib.parse as urlparse
-import ssl
 
 from functools import wraps
 from inspect import isawaitable
 
 from gino.ext.sanic import Gino as GinoBase
 from sanic.response import BaseHTTPResponse
-
-ssl_object = ssl.create_default_context()
-ssl_object.check_hostname = False
-ssl_object.verify_mode = ssl.CERT_NONE
 
 class Gino(GinoBase):
     async def set_bind(self, bind, loop=None, **kwargs):
