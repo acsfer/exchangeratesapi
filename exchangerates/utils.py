@@ -13,6 +13,7 @@ class Gino(GinoBase):
         kwargs.setdefault('strategy', 'sanic')
         return await super().set_bind(
             bind,
+            ssl=True,
             loop=loop,
             json_serializer=ujson.dumps,
             json_deserializer=ujson.loads,
