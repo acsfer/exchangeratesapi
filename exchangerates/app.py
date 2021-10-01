@@ -2,6 +2,9 @@ import fcntl
 import itertools
 import requests
 import ssl
+ssl_object = ssl.create_default_context()
+ssl_object.check_hostname = False
+ssl_object.verify_mode = ssl.CERT_NONE
 
 from datetime import datetime
 from decimal import Decimal
